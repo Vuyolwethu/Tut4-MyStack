@@ -9,13 +9,18 @@ private:
 public:
 	MyStack();
 	~MyStack();
-	bool Push(int);
-	bool Pop(int);
+	bool Push(const T&);
+	bool Pop(T&);
 	bool Peek();
 	bool isFull();
 	bool isEmpty();
 	void Print();
 
 };
+// constructor template 
+template < typename T>
+MyStack <T> ::MyStack(int s) :size(s>0 ? s : 30), top(-1), previous(new T[Size])
+{
+}
 #endif
 

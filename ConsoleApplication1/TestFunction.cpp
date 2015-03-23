@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#include"MyStack.h";
+#include"MyStack.h"
 template<template T>
 struct MyStack
 {
