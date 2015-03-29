@@ -7,8 +7,8 @@ private:
 	int Size;
 	int top;
 public:
-	MyStack();
-	~MyStack();
+	MyStack(int=30); //constructor
+	~MyStack();     // destructor
 	bool Push(const T&);
 	bool Pop(T&);
 	bool Peek();

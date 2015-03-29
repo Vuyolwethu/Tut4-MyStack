@@ -2,17 +2,27 @@
 using namespace std;
 #include"MyStack.h"
 template<template T>
-struct MyStack
+/*struct node
 {
 	int Age;
 	struct node *previous;
 };
-
+struct node*tail=NULL, *current=NULL
+*/
 int main()
 {
+	MyStack b;
 	int Size;
-	cout << "what number do you want to push or pop to the stack?" << endl;
+	cout << "The following data is pushed into a stack by calling the function Push" << endl;
 	cin>>Size;
-	MyStack.Push(int Size);
-	MyStack.Pop(int Size);
+	b.Push(14);
+	b.Push(20);
+	b.Push(58)
+	b.Push(75)
+	while (!b.Empty())
+	{
+		b.Pop();
+	}
+	system("pause");
+	return 0;
 }
